@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- Déclaration du type de document HTML5 -->
+<html lang="fr"> <!-- Langue du document définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <!-- ony Pro: https://bosseck.github.io/Cv-portfolio/
+tpe https://bosseck.github.io/Cv-portfolio/index.html -->
+    <!-- Lien vers les icônes FontAwesome -->
+    <!-- Pour l'icon -->
+    <link rel="shortcut icon" href="desktop26.ico" type="image/x-icon">
+     <link href="fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet" />
+    
+    
+    <!-- Lien vers la feuille de style personnalisée -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Titre de l’onglet du navigateur -->
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- En-tête de la page contenant le logo et le menu -->
+    <header class="header">
+        <!-- Logo cliquable qui mène à la section "Accueil" -->
+        <a href="index.html" class="logo">Tony <span>Pro</span></a>
+
+        <!-- Icône pour menu mobile -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="cv.html">Cv</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">Contact</a>
+            <a href="tpe.html" class="dropdown-toggle">TPE<span class="caret">▼</span></a>
+        </nav>
+    </header>
+
+    <form action="" method="post">
+        <div class="form-container">
+            <h2 class="titre"><hr>Contacter nous ici<hr></h2>
+            <div class="fiel">
+                <input type="text" placeholder="Votre Nom" class="in" />
+                <input type="email" placeholder="Votre Address mail" class="in" />  
+            </div>
+            <br />
+            <textarea rows="8" cols="40" class="ine" placeholder="Laisser nous un message..."></textarea><br />
+            <input type="submit" value="Envoyer" />
+    </form>    
+<style>
+    body{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    .form-container{
+        padding: 10px;
+        width: 100%;
+    }
+    hr{
+        width: 30%;
+        height: 1px;justify-items: center;
+    }
+    .fiel{
+        display: flex;
+    }
+    .titre {
+        display: flex;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .in {
+        padding: 10px;
+        width: 100%;
+        margin: 1px;
+        border: 1px solid #43CDFF;
+        outline: none;
+    }
+    .ine {
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        border: 1px solid #43CDFF;
+    }
+    input[type="submit"] {
+        padding: 10px;
+        margin: 5px 0 0 0 ;
+        width: 100px;
+        background-color: white;
+        color: #43CDFF;
+        border: 1px solid #43CDFF;
+    }
+    input[type="submit"]:hover {
+        background-color: #43CDFF;
+        color: white;
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+
+</style>
+<script type="text/javascript" charset="utf-8">
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+</script>
+</body>
+</html>

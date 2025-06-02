@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!-- Déclaration du type de document HTML5 -->
+<html lang="fr"> <!-- Langue du document définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <!-- ony Pro: https://bosseck.github.io/Cv-portfolio/
+tpe https://bosseck.github.io/Cv-portfolio/index.html -->
+    <!-- Lien vers les icônes FontAwesome -->
+    <!-- Pour l'icon -->
+    <link rel="shortcut icon" href="desktop26.ico" type="image/x-icon">
+     <link href="fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet" />
+    
+    
+    <!-- Lien vers la feuille de style personnalisée -->
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Titre de l’onglet du navigateur -->
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- En-tête de la page contenant le logo et le menu -->
+    <header class="header">
+        <!-- Logo cliquable qui mène à la section "Accueil" -->
+        <a href="index.html" class="logo">Tony <span>Pro</span></a>
+
+        <!-- Icône pour menu mobile -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="#">Cv</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="form.html">Contact</a>
+            <a href="tpe.html" class="dropdown-toggle">TPE<span class="caret">▼</span></a>
+        </nav>
+    </header>
+
+
+  <div class="cv-container">
+    <div class="left">
+      <img src="4.jpg" alt="Photo">
+      <div class="section-title">Contact</div>
+      <p><i class="fa fa-phone"></i> +237 672 081 416</p>
+      <p><i class="fa fa-envelope"></i> tonymod237@gmail.com</p>
+      <p><i class="fa fa-map-location-dot"></i> Douala, Cameroun</p>
+
+      <br>
+      <hr>
+
+      <div class="section-title">Langues</div>
+      <p>Français</p><div class="bar"><span style="width: 95%"></span></div>
+      <p>Anglais</p><div class="bar"><span style="width: 10%"></span></div>
+      <p>Espagnol</p><div class="bar"><span style="width: 5%"></span></div>
+
+      <br>
+      <hr>
+
+      <div class="section-title">Compétences</div>
+      <ul>
+        <li>Développeur Full-Stack</li>
+        <li>Maintenance système (Windows)</li>
+        <li>Capacité d’adaptation</li>
+        <li>Rigueur</li>
+        <li>Autonomie</li>
+      </ul>
+
+      <br>
+      <hr>
+
+      <div class="section-title">Centres d’intérêt</div>
+      <ul>
+        <li>Jeux vidéo</li>
+        <li>Culture Otaku</li>
+        <li>Dessin</li>
+        <li>Recherche</li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <h1>BOSSECK BOSSECK JUSTIN EMMANUEL</h1>
+      <h3>Université</h3>
+
+      <div class="experience">
+        <h3>Profil</h3>
+        <p>J'ai effectué un stage académique de 5 semaines au CIJ. Je suis passionné par l'informatique , 
+          je suis très attentif et à l'écoute des critiques et des suggestion des autres,
+           je possède un bon sens relationnel que je saurai mettre au service de votre entreprise.</p>
+      </div>
+
+      <br>
+      <hr>
+
+      <div class="experience">
+        <h3>Expériences Professionnelles</h3>
+        <div class="job">
+          <h4>Stagiaire</h4>
+          <small>CIJ, Douala | 2023 – 2023</small>
+          <ul>
+            <li>Création d’un site web e-commerce.</li>
+            <li>Création d’un site web de vote.</li>
+            <li>Création d’un systeme de messagerie.</li>
+            <li>Création d’un calculatrice en VBA</li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <hr>
+
+      <div class="formation">
+        <h3>Formation</h3>
+        <div class="job">
+          <h4>Probatoire & Baccalauréat TI (Technologie de l'informatique)</h4>
+          <small>Lycée Joss, Douala | 2022 - 2023 & 2023 – 2024</small>
+        </div>
+        <div class="job">
+          <h4>Licence classique en Informatique</h4>
+          <small>Université de Douala, Douala | 2024 – 2026</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/e914695416.js" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Déclaration du type de document HTML5 -->
+<html lang="fr"> <!-- Langue du document définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <!-- ony Pro: https://bosseck.github.io/Cv-portfolio/
+tpe https://bosseck.github.io/Cv-portfolio/index.html -->
+    <!-- Lien vers les icônes FontAwesome -->
+    <!-- Pour l'icon -->
+    <link rel="shortcut icon" href="desktop26.ico" type="image/x-icon">
+     <link href="fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet" />
+    
+    
+    <!-- Lien vers la feuille de style personnalisée -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Titre de l’onglet du navigateur -->
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- En-tête de la page contenant le logo et le menu -->
+    <header class="header">
+        <!-- Logo cliquable qui mène à la section "Accueil" -->
+        <a href="#home" class="logo">Tony <span>Pro</span></a>
+
+        <!-- Icône pour menu mobile -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="cv.html">Cv</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="form.html">Contact</a>
+            <a href="tpe.html" class="dropdown-toggle">TPE<span class="caret">▼</span></a>
+        </nav>
+    </header>
+
+    <!-- Section principale d'accueil -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Bonjour, c'est <span>Bosseck</span></h1>
+            <h3 class="text-animation">Je suis un <span> </span></h3>
+            <p>
+                Je suis passionné par l'informatique et je possède un bon 
+                sens relationnel que je saurai mettre au service de votre entreprise.
+            </p>
+            
+            <!-- Icônes vers les réseaux sociaux -->
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="btn-group">
+                <a href="#" class="btn">Engager</a>
+                <a href="form.html" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <!-- Image de profil -->
+        <div class="home-img">
+            <img src="4.jpg" alt="Photo de profil">
+        </div>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/e914695416.js" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+</script>
+</html>

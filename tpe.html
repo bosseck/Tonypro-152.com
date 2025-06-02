@@ -1,0 +1,318 @@
+<!DOCTYPE html> <!-- Déclaration du type de document HTML5 -->
+<html lang="fr"> <!-- Langue du document définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <!-- ony Pro: https://bosseck.github.io/Cv-portfolio/
+tpe https://bosseck.github.io/Cv-portfolio/index.html -->
+    <!-- Lien vers les icônes FontAwesome -->
+    <!-- Pour l'icon -->
+    <link rel="shortcut icon" href="desktop26.ico" type="image/x-icon">
+     <link href="fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet" />
+    
+    
+    <!-- Lien vers la feuille de style personnalisée -->
+    <link rel="stylesheet" href="style3.css">
+
+    <!-- Titre de l’onglet du navigateur -->
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- En-tête de la page contenant le logo et le menu -->
+    <header class="header">
+        <!-- Logo cliquable qui mène à la section "Accueil" -->
+        <a href="index.html" class="logo">Tony <span>Pro</span></a>
+
+        <!-- Icône pour menu mobile -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="cv.html">Cv</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="form.html">Contact</a>
+            <a href="#" class="dropdown-toggle">TPE<span class="caret">▼</span></a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+    <h1>Pont blanc</h1>
+    <p style="text-align: justify;">
+        Ecrire un pont blanc sur l'image d'un pont.
+    </p>
+
+    <!-- Grille d'images du projet -->
+    <div class="grille">
+      <div class="left" style="background-image: url('pont8.jpg'); position: relative;background-size: cover;
+        background-position: center;
+        height: 300px; width: 40%;">
+        <div class="element-1" >
+          <h3 style="text-align: center; font-size: 24px; margin: 10% 10% 0 0;">Pont-Blanc</h3>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="element">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Sous-menu</h1>
+    <p style="text-align: justify;">
+        Realisation d’un menu deroulant.
+    </p>
+
+    <!-- Grille d'images du projet -->
+    <div class="grille">
+      <div class="left">
+        <div class="element-1">
+            <style>
+    .navbarr {
+      background-color: #222;
+      overflow: visible;
+      border-bottom: 1px solid #080808;
+    }
+
+    .container-fluid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-header {
+      flex-shrink: 0;
+    }
+
+    .navbar-brand {
+      color: #9d9d9d;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+
+    .navbar-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .navbar-nav li {
+      position: relative;
+    }
+
+    .navbar-nav li a {
+      color: #9d9d9d;
+      text-decoration: none;
+      display: block;
+      padding: 15px 20px;
+      white-space: nowrap;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      background-color: #080808;
+      color: white;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      z-index: 1000;
+    }
+
+    .dropdown-menu li {
+      width: 100%;
+    }
+
+    .dropdown-menu li a {
+      padding: 10px 15px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #000000;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+
+    .caret {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbarr">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Page 1 <span class="caret">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+      </div>
+
+      <div class="right">
+        <div class="element">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    ul{
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        display: flex;
+    }
+     a{
+        font-size: 16px;
+        margin: 5px;
+        color: #fff;
+    }
+    
+  </style>
+  <div class="container">
+    <h1>Icon</h1>
+    <p style="text-align: justify;">
+        Pour positionner l'icone a cote d’un lien de navigation. 
+    </p>
+
+    <!-- Grille d'images du projet -->
+    <div class="grille">
+      <div class="left">
+        <div class="element-1">
+          <ul>
+    <li class="li"><a href="#"><i class="fa fa-home" ></i>Home</a></li>
+    <li><a href="#"><i class="fa fa-user" ></i>About</a></li>
+    <li><a href="#"><i class="fa fa-message" ></i>Contact</a></li>    
+</ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="element">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1>Grid-Card</h1>
+    <p style="text-align: justify;">
+        Disposition des photos.
+    </p>
+
+    <!-- Grille d'images du projet -->
+    <div class="grille">
+      <div class="left">
+        <div class="element-1">
+            <div class="element"><img src="tajmahal.jpg" alt=""></div>
+            <div class="element"><img src="R (1).jfif" alt=""></div>
+            <div class="element"><img src="R (2).jfif" alt=""></div>
+            <div class="element"><img src="R (3).jfif" alt=""></div>
+            <div class="element"><img src="paris.jpeg" alt=""></div>
+            <div class="element"><img src="OIP.jfif" alt=""></div>
+            <div class="element"><img src="OIP (1).jfif" alt=""></div>
+        </div>
+      </div>
+    </div>
+</body>
+<style>
+      .element-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* plus tu augmente le nombre plus les image augmente sur les lignes*/
+  grid-gap: 20px;
+}
+
+.element img{
+        width: 100%;
+        height: 100%;
+}
+</style>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="element">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggles = document.querySelectorAll('.dropdown-toggle');
+
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        var parent = this.parentElement;
+
+        // Fermer les autres dropdowns
+        document.querySelectorAll('.dropdown').forEach(function (el) {
+          if (el !== parent) el.classList.remove('open');
+        });
+
+        // Ouvrir ou fermer le dropdown cliqué
+        parent.classList.toggle('open');
+      });
+    });
+
+    // Fermer si on clique en dehors
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown').forEach(function (el) {
+          el.classList.remove('open');
+        });
+      }
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+</script>
+<script src="https://kit.fontawesome.com/e914695416.js" crossorigin="anonymous"></script>
+</html>
